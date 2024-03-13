@@ -10,15 +10,15 @@ Inside the root path run:
 ```bash
 docker-compose up --build
 ```
-# Create a new user
+# Get users
 ```bash
-curl -X POST -H "Content-Type: application/json" -d '{"name": "New Item", "price": 10.0}' http://localhost:8000/items/
+curl -X GET -H "Content-Type: application/json" http://localhost:8000/users/
 ```
 
 
 # Endpoint Descriptions
 
-Just open: http://localhost:8000/docs
+Just open (after run the compose): http://localhost:8000/docs
 
 # Problems to connect to mongo or connection refused error?
 Try this
